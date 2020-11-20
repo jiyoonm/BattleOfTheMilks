@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+html,
+body {
+    background-color: #ff6a00;
+    color: #000126;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #000126;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-bottom: 100px; */
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #000126;
+    margin: 15px 60px 45px;
+    font-size: 36px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+    line-height: 1.6;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    color: #000126;
+}
+
+a:hover {
+    color: white;
+}
+
+.legend-pie {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 20px;
+    font-size: .9rem;
+}
+
+.legend-pie2 {
+    display: inline-block;
+    text-align: left;
+}
+
+.legend-pie .non-food {
+    color: #68aad6;
+}
+
+.legend-pie .food {
+    color: #ff6a00;
+}
+
+.buttons {
+    text-align: center;
+    margin: 0 40px 0;
+}
+
+button {
+    border-radius: 8px;
+    display: inline-block;
+    border: none;
+    padding: .5em;
+    margin: 0 4px 10px;
+    text-decoration: none;
+    background: #d6d6d6;
+    font-size: .8rem;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 250ms ease-in-out, transform 150ms ease;
+}
+
+button:hover,
+button:focus {
+    background: #8c8c8c;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+div.donut-tip {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    text-align: center;
+    padding: 9px;
+    background: #ededed;
+    color: #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: 1rem;
+    overflow-y: visible;
+    width: 300px;
+}
+
+div.tool-tip {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    background: #e3e3e3;
+    color: #313639;
+    border-radius: 8px;
+    pointer-events: none;
+    font-size: .9rem;
+    overflow-y: visible;
+    width: 80px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#by {
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+    text-decoration: underline;
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#bod {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    outline: 4px solid #000126;
+    width: 60%;
+    margin: 0 auto 0;
+    background-color: #fff;
+}
+
+.first {
+    line-height: 110%;
+    font-size: 3.7rem;
+}
+
+#second {
+    line-height: 110%;
+    font-size: 6rem;
+}
+
+#bottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+#colorb {
+    background-color: white;
+}
+
+.separation {
+    height: 4px;
+    width: auto;
+    background-color: #000126;
+}
+
+#firsttext {
+    font-size: 18px;
+    margin: 30px 300px 0;
+    line-height: 1.6;
+    text-align: left;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+/* #growingRect{ position:relative;}
+.rectclass{
+	transition:1s ease;
+	 visibility:visible} */
+
+#about {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.source {
+    width: 40%;
+    margin: 6px auto 40px;
+    text-align: left;
+    font-size: 14px;
+}
+
+#bod a:hover {
+    color: #ff6a00;
+}
+
+@media screen and (max-width: 992px) {
+    #bod {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #bod {
+        width: 100%
+    }
+}

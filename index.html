@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Battle of the Substitute Milks</title>
+    <link rel="stylesheet" type="text/css" href="styles/global.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+</head>
+
+<body>
+    <div id="orange">
+        <div id="container">
+            <div class="glass">
+                <div class="milk"></div>
+            </div>
+            <div class="head"></div>
+            <div class="pour"></div>
+        </div>
+
+        <header>
+            <div class="first">Battle of the</div>
+            <div id="second">Plant-Based</div>
+            <div class="first">Milks</div>
+        </header>
+        <div id="by">By Jiyoon Moon</div>
+    </div>
+    <div class="separation"></div>
+    <div id="colorb">
+        <div id="bod">
+
+            <p>
+                The environmental impacts of food are endless. 26% of greenhouse gas emissions in the world are derived from the food we eat. The cattle we grow take up 94% of the mammal biomass in the world (excluding humans), meaning livestock outweigh wild mammals
+                by a factor of 15-to-1. The consideration of our diets is critical in trying to tackle climate change, water stress, pollution, and restoring lands back to forests or grasslands.
+            </p>
+
+            <h1>What are the enviromental impacts of food? </h1>
+            <div id="pie"></div>
+            <div class="legend-pie">
+                <div class="legend-pie2">
+                    <div><i class="fas fa-circle non-food"></i> Non-Food Related</div>
+                    <div><i class="fas fa-circle food"></i> Food Related</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="group1">Greenhouse Gases</button>
+                <button id="group2">Land Use</button>
+                <button id="group3">Freshwater Use</button>
+                <button id="group4">Water Pollution</button>
+            </div>
+            <div class="source">Source: <a href="https://science.sciencemag.org/content/360/6392/987/">Poore & Nemecek (2018) Science; Reducing food’s environmental impacts through producers and consumers</a></div>
+            <p><a href="https://www.theguardian.com/environment/2018/may/31/avoiding-meat-and-dairy-is-single-biggest-way-to-reduce-your-impact-on-earth?CMP=aff_1432&utm_content=The+Independent&awc=5795_1586147517_84d855e9309d04e3869e3d1c7c9118a5">Researchers</a>                at the University of Oxford found that cutting meat and dairy products from your diet could reduce an individual's carbon footprint from food by up to 73%, making the switch to eating a plant-based diet the most impactful thing an individual
+                can do for the environment. That means that an action as simple as switching the type of milk you choose to drink can subtract a significant amount of your daily carbon footprint.
+
+            </p>
+            <p> However, we’ve been trained since we were children to view cow’s milk as the most nutritious option. In schools, advertising campaigns like ‘Got milk?’ presented us with images of bodybuilders and pop stars, telling us that milk was the reason
+                they were strong. Dairy milk is a food item that we see as normal, necessary, and everyday. It’s also why it’s so difficult for people to accept that the dairy industry is unbelievably cruel and ultimately unethical. Although dairy milk
+                persists as an option for consumers to add protein and calcium to their diet, many sustainable and nutritious plant- based milks have arose as possible substitutes, the options of which we will be exploring today.
+            </p>
+
+            <h1>Water Use (L) per One Liter of Milk</h1>
+
+            <div id="viz"></div>
+            <div class="source">Source: <a href="https://soundcloud.com/science-vs/soy-almond-oat-milks-are-they-udder-bull">Soy, Almond, Oat Milks: Are They Udder Bull? (Science VS.)</a></div>
+
+            <p> While determining which milk is the most sustainable, it is important to note that cow’s milk has by far the largest environmental impact, and one glass of dairy milk is associated with drastically higher amounts of land use, emissions, and
+                water use than any of the other plant-based milks. </p>
+
+            <p>
+                However, when looking at plant based milks, almond milk is the highest selling substitute milk in America. A common criticism of this drink is its abundant water use. Typically almond trees can survive on 7.6 inches of water a year; however, for an almond
+                tree to produce optimal yields in a place like California, where 80% of almond trees are grown, they need 54-58 inches of water a year. This makes almond milk the most water costly plant-milk. However, rice milk falls not too far behind
+                as rice fields are purposely flooded to suppress weeds and encourage growth. In these watery habitats, bacteria is produced, leading to our second issue: gas emissions.
+
+            </p>
+            <h1>Carbon Emissions (kg CO<sup>2</sup>) per One Liter of Milk</h1>
+            <div id="viz1"></div>
+            <div class="source">Source: <a href="https://science.sciencemag.org/content/360/6392/987/">Poore & Nemecek (2018) Science; additional calculations for plant milks, milk chocolate, and pasta</a></div>
+
+            <p>Behind cattle, cultivating rice is the biggest producer of methane. Bacteria breeding in flooded rice paddies pump methane into the atmosphere, similarly to how cows produce large amounts of methane through their digestive processes. Rice
+                produces more greenhouse gas emissions than any other plant, and the flooding required to cultivate rice requires excessive amounts of water.</p>
+
+            <h1>Annual Land Use (m<sup>2</sup>) per One Liter of Milk</h1>
+            <div id="viz2"></div>
+            <div id="chart"></div>
+            <div class="source">Source: <a href="https://science.sciencemag.org/content/360/6392/987/">Poore & Nemecek (2018) Science; additional calculations for plant milks, milk chocolate, and pasta</a></div>
+            <p>There are around 270 million dairy cows worldwide. That requires a lot of land space. Adding on top of that, these cows require crops to feed on, typically soy, which also requires a lot of land space.</p>
+            <p>Land use is the potential downfall of soy milk because it uses a lot of our land space currently. It isn’t necessarily indicated on this table as 85% of soybeans are currently used to feed animals and produce oil rather than to make soy milk.
+                However it is significant that, parts of the Amazon rainforest are being deforested specifically to produce soy plantations. The workaround for this is to simply do a little research and read the carton to find soy milk that is made from
+                organic soybeans grown in the US or Canada. </p>
+
+            <p>Roughly 80% of almonds are currently grown in California, USA. Farmers in the area have seen huge increases in demand in recent years, with around 44% more land being used for almond trees now than 5 years ago. </p>
+            <p>Oat milk and soy milk are almost synonymous in their environmental impacts. However, oats are also a beneficial cover crop for farming rotations to many rotations that rely solely on corn and soybeans. According to <a href="https://www.ucsusa.org/sites/default/files/attach/2017/05/rotating-crops-report-ucs-2017.pdf">Matt Liebman</a>,
+                an agronomist at Iowa State University, if farmers switched to a three-year rotation of corn, soybeans, and a combination of oat and clovers, they could potentially reduce herbicide use by 25-51%. The green manure properties of clover
+                and oats would also mean farmers could use 88-92% less synthetic nitrogen fertilizer. </p>
+            <p>However, according to a <a href=https://www.motherjones.com/environment/2018/05/this-amazing-new-milk-is-going-to-change-everything/>Mother Jones</a> article, the oat market is still pretty small, especially when compared to corn and soybeans.
+                Oat milk would need to explode in popularity in order for this three-season rotation to even be economically feasible for farmers. However, interest in oat milk has risen dramatically since the beginning of 2019. When deciding between
+                dairy and non-dairy, the smarter environmental choice goes to the plant-based team. By a small margin, oat milk is the best milk for the environment, but no worries if it’s not always available to you.</p>
+        </div>
+    </div>
+    <div class="separation"></div>
+    <div id="bottom">
+        <div id="about">About:</div> This website was created using HTML, CSS, and D3.js. You can find the code <a href="https://github.com/jiyoonm/jiyoonm.github.io">here</a>. If you have any thoughts, comments or ideas, you can email me <a href="mailto:moonj066@newschool.edu?Subject=Hello"
+            target="_top">here</a>.
+    </div>
+
+    <script src="js/bar.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="js/milks.js"></script>
+    <script src="js/bar1.js"></script>
+    <script src="js/bar2.js"></script>
+</body>
+
+</html>
